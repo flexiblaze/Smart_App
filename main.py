@@ -5,10 +5,10 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)
 
-NASA_API_KEY = "dMS77MK4sQXhi7z4Xb6XBJJhIpy5Nu6ZPUofggpR"  # vervang door je eigen key
+NASA_API_KEY = "dMS77MK4sQXhi7z4Xb6XBJJhIpy5Nu6ZPUofggpR"  # api key
 
 
-# ASCII-art logo
+# ASCII
 logo = f"""
 {Fore.CYAN}{Style.BRIGHT}$$\\      $$\\ $$$$$$$$\\  $$$$$$\\ $$$$$$$$\\ $$\\   $$\\ $$$$$$$$\\ $$$$$$$\\         
 $$ | $\\  $$ |$$  _____|$$  __$$\\__$$  __|$$ |  $$ |$$  _____|$$  __$$\\       
@@ -43,7 +43,6 @@ def main():
         elif keuze == "4":
             print(Fore.MAGENTA + "Programma afgesloten. Tot ziens!")
             break
-
         elif keuze == "5":
             get_nasa_apod(NASA_API_KEY)
         else:

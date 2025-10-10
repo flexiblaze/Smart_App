@@ -1,6 +1,3 @@
-# Sprint 2: Smart App Controller
-
-# Functie 1: aantal dagen in inputbestand tellen
 def aantal_dagen(inputFile):
     try:
         with open(inputFile, 'r') as file:
@@ -14,7 +11,6 @@ def aantal_dagen(inputFile):
         return 0
 
 
-# Functie 2: actuatoren automatisch berekenen en naar outputbestand schrijven
 def auto_bereken(inputFile, outputFile):
     try:
         with open(inputFile, 'r') as infile:
@@ -38,13 +34,11 @@ def auto_bereken(inputFile, outputFile):
                 else:
                     cv = 0
 
-                # Ventilatie
                 vent = min(numPeople + 1, 4)
 
                 # Bewatering
                 bewatering = True if precip < 3 else False
 
-                # Schrijf naar outputbestand
                 outfile.write(f"{datum};{cv};{vent};{bewatering}\n")
 
         print(f"Outputbestand '{outputFile}' succesvol aangemaakt.")
@@ -53,7 +47,6 @@ def auto_bereken(inputFile, outputFile):
         print("Fout: inputbestand bestaat niet.")
 
 
-# Functie 3: actuatorwaarden overschrijven
 def overwrite_settings(outputFile):
     try:
         with open(outputFile, 'r') as f:
@@ -143,10 +136,9 @@ def smart_app_controller():
 
 
 if __name__ == "__main__":
-    with open("../input_data.txt", "r") as f:
+    with open("../texts/input_data.txt", "r") as f:
         regels = f.readlines()
         print(regels)
 
-    # Daarna start je pas het menu
     smart_app_controller()
 
