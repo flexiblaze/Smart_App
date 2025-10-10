@@ -56,5 +56,3 @@ def weerstation():
         print(rapport)
         print(f"Gem. temp tot nu toe is {gemiddelde:.1f}")
         print("=" * 38)
-
-weerstation()
