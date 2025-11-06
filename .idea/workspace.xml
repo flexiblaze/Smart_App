@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="133cda54-d1ef-4bf5-9342-dbde6a776aa9" name="Changes" comment="second commit met alle functies">
+    <list default="true" id="133cda54-d1ef-4bf5-9342-dbde6a776aa9" name="Changes" comment="third commit met bugs, comments etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/smart_app_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/smart_app_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/texts/input_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/weerstation.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/weerstation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/texts/output_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texts/input_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texts/output_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,6 +68,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gebruiker\PycharmProjects\Smart_App" />
+      <recent name="C:\Users\gebruiker\PycharmProjects\Smart_App\texts" />
       <recent name="C:\Users\gebruiker\PycharmProjects\Smart_App\apps" />
     </key>
   </component>
@@ -100,13 +104,22 @@
       <option name="project" value="LOCAL" />
       <updated>1760083877318</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit met bugs, comments etc">
+      <option name="closed" value="true" />
+      <created>1760094677208</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760094677208</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="first commit met goede mappen" />
     <MESSAGE value="second commit met alle functies" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit met alle functies" />
+    <MESSAGE value="third commit met bugs, comments etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit met bugs, comments etc" />
   </component>
 </project>

@@ -1,11 +1,11 @@
-from apps.weerstation import weerstation
-from apps.smart_app_controller import smart_app_controller
-from utils import get_current_weather, get_nasa_apod
-from colorama import init, Fore, Style
-
+from colorama import Fore, Style, init
 init(autoreset=True)
 
-NASA_API_KEY = "dMS77MK4sQXhi7z4Xb6XBJJhIpy5Nu6ZPUofggpR"  # api key
+from apps.weerstation import weerstation
+from apps.smart_app_controller import smart_app_controller
+from utils import get_current_weather, get_inspirational_quote
+
+init(autoreset=True)
 
 
 # ASCII
@@ -22,18 +22,17 @@ $$  /   \\$$ |$$$$$$$$\\ $$ |  $$ |  $$ |   $$ |  $$ |$$$$$$$$\\ $$ |  $$ |
 
 def main():
     print(logo)
-    print(Fore.YELLOW + Style.BRIGHT + "Welkom bij de Smart App!\n")
+    print(Fore.YELLOW + Style.BRIGHT + "Welkom bij de WEATHER METER!\n")
 
     while True:
-        print(Fore.CYAN + Style.BRIGHT + "--- Smart App Hoofdmenu ---")
+        print(Fore.CYAN + Style.BRIGHT + "--- WEATHER METER Hoofdmenu ---")
         print(Fore.GREEN + "1. Weerstation")
-        print(Fore.GREEN + "2. Smart App Controller")
+        print(Fore.GREEN + "2. Home Controller")
         print(Fore.GREEN + "3. Huidige temperatuur Utrecht")
         print(Fore.GREEN + "4. Stoppen")
-        print(Fore.GREEN + "5. NASA APOD (ruimtefoto van de dag)")
+        print(Fore.GREEN + "5. Inspirerende Quote van de Dag")
 
         keuze = input(Fore.YELLOW + "Maak een keuze (1-5): ")
-
         if keuze == "1":
             weerstation()
         elif keuze == "2":
@@ -44,9 +43,12 @@ def main():
             print(Fore.MAGENTA + "Programma afgesloten. Tot ziens!")
             break
         elif keuze == "5":
-            get_nasa_apod(NASA_API_KEY)
+            get_inspirational_quote()
         else:
             print(Fore.RED + "Ongeldige keuze, probeer opnieuw.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nProgramma handmatig gestopt. Tot ziens!")
